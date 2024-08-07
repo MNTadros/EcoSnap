@@ -1,3 +1,8 @@
+document.getElementById('hamburger').addEventListener('click', function() {
+    var menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     // Video and image elements
     const video = document.getElementById("video"); // Video stream element
@@ -180,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const { content } = jsonData;
 
             // Destructure content data for easier access
-            const { item_name, calories, score, description, fat, protein, sugar, alternatives } = content;
+            const { item_name, calories, score, description, fat, protein, sugar, sustainable_alternatives } = content;
 
             // Update the HTML elements with the parsed data
             if (mostSustainableItem) {
@@ -196,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 descriptionElement.textContent = description || 'No description available.'; // Update description
             }
             if (sustainableAlternatives) {
-                sustainableAlternatives.textContent = alternatives ? alternatives.join(', ') : 'No alternatives available.'; // Update alternatives
+                sustainableAlternatives.textContent = sustainable_alternatives && sustainable_alternatives.length > 0 ? sustainable_alternatives.join(', ') : 'No alternatives available.'; // Update alternatives
             }
             if (fatContent) {
                 fatContent.textContent = ` ${fat || 'N/A'} grams`; // Update fat content
@@ -211,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } catch (error) {
             // Log any critical errors encountered during processing
             console.error('Error processing image:', error);
-            // alert('Failed to process image'); // Optionally alert the user
+            // Optionally alert the user
         }
     }
 

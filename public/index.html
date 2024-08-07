@@ -13,25 +13,30 @@
 </head>
 
 <body class="bg-green-200">
-    <header class="bg-green-500 p-4">
+    <header class="bg-green-800 p-4">
         <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap">
             <a href="./" class="flex items-center">
                 <img src="images/EcoSnap_Circle.png" alt="EcoSnap Logo" class="h-12 w-12 md:h-16 md:w-16">
-                <p class="text-white text-lg md:text-xl ml-2">EcoSnap</p>
+                <p class="text-white text-2xl md:text-3xl ml-2">EcoSnap</p>
             </a>
+            <div class="md:hidden">
+                <button id="hamburger" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
             <nav class="w-full md:w-auto">
-                <ul class="flex flex-col md:flex-row md:space-x-4 font-mono md:py-4 md:space-y-0 space-y-2 md:space-y-0 hidden md:flex">
+                <ul id="menu" class="flex flex-col md:flex-row md:space-x-4 font-mono md:py-4 md:space-y-0 space-y-2 md:space-y-0 hidden md:flex pt-2">
                     <li><a href="./" class="text-white bg-green-600 p-2 rounded-full">Dashboard</a></li>
                     <li><a href="Food-Companion.html" class="text-white bg-green-600 p-2 rounded-full">Food Companion</a></li>
                     <li><a href="Shopping-Companion.html" class="text-white bg-green-600 p-2 rounded-full">Shopping Companion</a></li>
-                    <li><a href="Menu-Companion.html" class="text-white bg-green-600 p-2 rounded-full">Menu Companion</a></li>
                 </ul>
-                <ul class="md:hidden flex flex-row justify-center space-x-1 mt-2 text-sm">
-                  <li><a href="./" class="text-white bg-green-600 p-2 rounded-full block">Dashboard</a></li>
-                  <li><a href="Food-Companion.html" class="text-white bg-green-600 p-2 rounded-full block">Food </a></li>
-                  <li><a href="Shopping-Companion.html" class="text-white bg-green-600 p-2 rounded-full block">Shopping </a></li>
-                  <li><a href="Menu-Companion.html" class="text-white bg-green-600 p-2 rounded-full block">Menu </a></li>
-              </ul>              
+                <ul id="mobile-menu" class="md:hidden flex flex-col space-y-4 mt-2 hidden p-2">
+                    <li><a href="./" class="text-white bg-green-600 p-2 rounded-full">Dashboard</a></li>
+                    <li><a href="Food-Companion.html" class="text-white bg-green-600 p-2 rounded-full">Food Companion</a></li>
+                    <li><a href="Shopping-Companion.html" class="text-white bg-green-600 p-2 rounded-full">Shopping Companion</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -99,9 +104,10 @@
         </div>
     </section>
 
-    <footer class="bg-green-500 p-4 text-center text-white">
+    <footer class="bg-green-800 p-4 text-center text-white">
         <p>© 2024 EcoSnap LLC. All Rights Reserved.</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
