@@ -61,6 +61,12 @@ const upload = multer({ storage: storage });
 // Serve static files from the "public" directory (e.g., HTML, CSS, JS files)
 app.use(express.static(publicDir));
 
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Handle root URL
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
+});
 // Serve static files from the "processed" directory (e.g., processed image files)
 app.use('/processed', express.static(processedDir));
 
@@ -68,8 +74,8 @@ app.use('/processed', express.static(processedDir));
 app.use(express.json({ limit: '50mb' }));
 
 // Serve the main index.html file at the root URL
-app.get('/', (req, res) => {
-    res.sendFile(path.join(publicDir, 'index.html'));
+app.get('/dashboard', (req, res) => {
+    res.sendFile(path.join(publicDir, 'Dashboard.html'));
 });
 
 // Serve specific HTML files at their respective URLs
