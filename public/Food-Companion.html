@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <title>EcoSnap</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.2.4/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="/images/EcoSnap_Circle.png">
 </head>
@@ -46,37 +47,40 @@
               <img id="uploaded-image" alt="Uploaded Image" class="absolute inset-0 w-full h-full object-cover rounded-lg hidden">
               <img src="images/default-image.jpg" alt="Placeholder" class="w-full h-auto rounded-lg object-cover">
           </div>
-          <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 md:items-center md:justify-center">
-            <input type="file" id="upload-input" accept="image/*" class="border rounded p-2">
-              <button id="capture-btn" class="bg-green-600 text-white px-4 py-2 rounded">Capture Photo</button>
-              <button id="flip-btn" class="bg-green-600 text-white px-4 py-2 rounded">Flip Camera</button>
-              <button id="reset-btn" class="bg-green-600 text-white px-4 py-2 rounded">Reset</button>
-          </div>
+          <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 md:items-center md:justify-center mt-4 relative">
+            <input type="file" id="upload-input" accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer" />
+                    <label for="upload-input" class="bg-green-600 text-white px-4 py-2 rounded-lg cursor-pointer hover:bg-green-700 transition">
+                Choose File
+            </label>
+                    <button id="capture-btn" class="bg-green-600 text-white px-4 py-2 rounded">Capture Photo</button>
+            <button id="flip-btn" class="bg-green-600 text-white px-4 py-2 rounded">Flip Camera</button>
+            <button id="reset-btn" class="bg-green-600 text-white px-4 py-2 rounded">Reset</button>
+        </div>
       </div>
   </div>
 </section>
 <section class="p-8 bg-green-200" id="sec-fedc">
     <div class="container mx-auto">
         <div class="bg-white p-4 rounded-lg shadow-md mx-auto text-center">
-            <p class="text-xl font-semibold">Sustainability</p>
+            <p class="text-xl font-semibold font-mono">Sustainability</p>
             <p id="sustainability-score" class="text-6xl font-bold">?/5</p>
         </div>
         <div class="mt-8 grid gap-4 grid-cols-1 md:grid-cols-2">
             <div class="bg-green-600 text-white p-4 rounded-lg text-center">
                 <p id="item-calories" class="text-3xl font-bold">?</p>
-                <p class="text-xl">Calories:</p>
+                <p class="text-xl font-mono">Calories:</p>
             </div>
             <div class="bg-green-600 text-white p-4 rounded-lg text-center">
                 <p id="sugar-content" class="text-3xl font-bold">?</p>
-                <p class="text-xl">Sugar:</p>
+                <p class="text-xl font-mono">Sugar:</p>
             </div>
             <div class="bg-green-600 text-white p-4 rounded-lg text-center">
                 <p id="protein-content" class="text-3xl font-bold">?</p>
-                <p class="text-xl">Protein:</p>
+                <p class="text-xl font-mono">Protein:</p>
             </div>
             <div class="bg-green-600 text-white p-4 rounded-lg text-center">
                 <p id="fat-content" class="text-3xl font-bold">?</p>
-                <p class="text-xl">Fat:</p>
+                <p class="text-xl font-mono">Fat:</p>
             </div>
         </div>
     </div>
@@ -84,14 +88,14 @@
 <section class="p-8" id="sec-sustainable-alternatives">
   <div class="container mx-auto">
     <div class="bg-white p-4 rounded-lg shadow-md mx-auto text-center">
-      <p class="text-xl font-semibold">Sustainable Alternatives:</p>
-      <div id="sustainable-alternatives" class="w-full mt-4 p-2 border rounded-lg bg-gray-100 text-gray-700">
+      <p class="text-xl font-semibold font-mono">Sustainable Alternatives</p>
+      <div id="sustainable-alternatives" class="w-full p-2 rounded-lg text-gray-700">
       </div>
     </div>
   </div>
 </section>
 
-<footer class="bg-green-600 text-white p-4 text-center">
+<footer class="bg-green-800 text-white p-4 text-center">
     <p class="text-sm">© 2024 EcoSnap LLC. All Rights Reserved.</p>
 </footer>
 <script src="app.js"></script>
