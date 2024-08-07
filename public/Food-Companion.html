@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="/images/EcoSnap_Circle.png">
+  <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-green-200 font-sans antialiased">
   <header class="bg-green-800 p-4">
@@ -39,23 +40,23 @@
         </nav>
     </div>
 </header>
-<section class="p-8" id="sec-2ca3">
-  <div class="container mx-auto">
-      <div id="camera-web-app-container" class="space-y-4 p-4 bg-white rounded-lg shadow-md max-w-[80%] mx-auto">
+<section class="py-12">
+  <div class="container mx-auto text-center">
+      <div id="camera-web-app-container" class="bg-white p-4 rounded-lg shadow-md max-w-[80%] mx-auto">
           <div id="video-container" class="relative max-w-[360px] mx-auto">
               <video id="video" autoplay class="w-full h-auto rounded-lg hidden"></video>
               <img id="uploaded-image" alt="Uploaded Image" class="absolute inset-0 w-full h-full object-cover rounded-lg hidden">
               <img src="images/default-image.jpg" alt="Placeholder" class="w-full h-auto rounded-lg object-cover">
           </div>
           <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 md:items-center md:justify-center mt-4 relative">
-            <input type="file" id="upload-input" accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer" />
-                    <label for="upload-input" class="bg-green-600 text-white px-4 py-2 rounded-lg cursor-pointer hover:bg-green-700 transition">
-                Choose File
-            </label>
-                    <button id="capture-btn" class="bg-green-600 text-white px-4 py-2 rounded">Capture Photo</button>
-            <button id="flip-btn" class="bg-green-600 text-white px-4 py-2 rounded">Flip Camera</button>
-            <button id="reset-btn" class="bg-green-600 text-white px-4 py-2 rounded">Reset</button>
-        </div>
+              <input type="file" id="upload-input" accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer" />
+                                      <label for="upload-input" class="bg-green-600 text-white px-4 py-2 rounded-lg cursor-pointer hover:bg-green-700 transition">
+                  Choose File
+              </label>
+                                      <button id="capture-btn" class="bg-green-600 text-white px-4 py-2 rounded">Capture Photo</button>
+              <button id="flip-btn" class="bg-green-600 text-white px-4 py-2 rounded">Flip Camera</button>
+              <button id="reset-btn" class="bg-green-600 text-white px-4 py-2 rounded">Reset</button>
+          </div>
       </div>
   </div>
 </section>
