@@ -13,35 +13,33 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-green-200 font-sans antialiased">
-  <header class="bg-green-800 p-4">
-    <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap">
-      <a href="Dashboard.html" class="flex items-center">
-        <img src="images/EcoSnap_Circle.png" alt="EcoSnap Logo" class="h-12 w-12 md:h-16 md:w-16">
-            <p class="text-white text-2xl md:text-3xl ml-2">EcoSnap</p>
-        </a>
-        <div class="md:hidden">
-            <button id="hamburger" class="text-white focus:outline-none">
+    <header class="bg-green-800 p-4 shadow-md">
+        <div class="container mx-auto flex items-center justify-between flex-wrap">
+            <a href="Dashboard.html" class="flex items-center">
+                <img src="images/EcoSnap_Circle.png" alt="EcoSnap Logo" class="h-12 w-12 md:h-16 md:w-16">
+                <p class="text-white text-2xl md:text-3xl ml-2 font-semibold">EcoSnap</p>
+            </a>
+            <button id="hamburger" class="text-white md:hidden focus:outline-none">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
+            <nav class="hidden md:flex space-x-4">
+                <a href="Dashboard.html" class="text-white bg-green-600 p-2 rounded-full hover:bg-green-700 transition">Dashboard</a>
+                <a href="Food-Companion.html" class="text-white bg-green-600 p-2 rounded-full hover:bg-green-700 transition">Food Companion</a>
+                <a href="Shopping-Companion.html" class="text-white bg-green-600 p-2 rounded-full hover:bg-green-700 transition">Shopping Companion</a>
+                <a href="About-Us.html" class="text-white bg-green-600 p-2 rounded-full hover:bg-green-700 transition">About Us</a>
+                <a href="Auth.html" class="text-white bg-green-600 p-2 rounded-full hover:bg-green-700 transition">Sign Up / Log in</a>
+            </nav>
+            <ul id="mobile-menu" class="md:hidden flex flex-col space-y-4 mt-2 hidden p-2 bg-green-800 rounded-lg shadow-md">
+                <li><a href="Dashboard.html" class="text-white bg-green-600 p-2 rounded-full hover:bg-green-700 transition">Dashboard</a></li>
+                <li><a href="Food-Companion.html" class="text-white bg-green-600 p-2 rounded-full hover:bg-green-700 transition">Food Companion</a></li>
+                <li><a href="Shopping-Companion.html" class="text-white bg-green-600 p-2 rounded-full hover:bg-green-700 transition">Shopping Companion</a></li>
+                <li><a href="About-Us.html" class="text-white bg-green-600 p-2 rounded-full hover:bg-green-700 transition">About Us</a></li>
+                <li><a href="Auth.html" class="text-white bg-green-600 p-2 rounded-full hover:bg-green-700 transition">Sign Up / Log in</a></li>
+            </ul>
         </div>
-        <nav class="w-full md:w-auto">
-            <ul id="menu" class="flex flex-col md:flex-row md:space-x-4 font-mono md:py-4 md:space-y-0 space-y-2 md:space-y-0 hidden md:flex pt-2">
-              <li><a href="Dashboard.html" class="text-white bg-green-600 p-2 rounded-full">Dashboard</a></li>
-              <li><a href="Food-Companion.html" class="text-white bg-green-600 p-2 rounded-full">Food Companion</a></li>
-                <li><a href="Shopping-Companion.html" class="text-white bg-green-600 p-2 rounded-full">Shopping Companion</a></li>
-                <li><a href="About-us.html" class="text-white bg-green-600 p-2 rounded-full">About Us</a></li>
-            </ul>
-            <ul id="mobile-menu" class="md:hidden flex flex-col space-y-4 mt-2 hidden p-2">
-              <li><a href="Dashboard.html" class="text-white bg-green-600 p-2 rounded-full">Dashboard</a></li>
-              <li><a href="Food-Companion.html" class="text-white bg-green-600 p-2 rounded-full">Food Companion</a></li>
-                <li><a href="Shopping-Companion.html" class="text-white bg-green-600 p-2 rounded-full">Shopping Companion</a></li>
-                <li><a href="About-us.html" class="text-white bg-green-600 p-2 rounded-full">About Us</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    </header>
 <section class="py-12">
   <div class="container mx-auto text-center">
       <div id="camera-web-app-container" class="bg-white p-4 rounded-lg shadow-md max-w-[80%] mx-auto">
