@@ -8,14 +8,20 @@
     "build:css": "postcss ./public/input.css -o ./public/output.css"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "multer": "^1.4.5-lts.1",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.7"
-  }
+  },
+  "description": "EcoSnap is a personal assistant application designed to empower users to make environmentally conscious decisions. By leveraging emerging technologies such as Ray-Ban Meta smart glasses, smart devices, and OpenAI’s APIs, our application analyzes and determines the best course of action for consumers to reduce their carbon footprint. This involves suggesting sustainable alternatives in what they eat, buy, and consume. EcoSnap integrates real-time insights and actionable recommendations into everyday activities to foster sustainable habits, reduce individual carbon footprints, and promote a broader culture of environmental awareness and responsibility.",
+  "keywords": [],
+  "author": ""
 }
