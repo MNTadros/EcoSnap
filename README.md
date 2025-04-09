@@ -19,33 +19,6 @@ Our inspiration for this project stemmed from a desire to explore how we can lea
 
 We used OpenAI API, Node.js, JavaScript, HTML, CSS, Machine Learning, Prompt Engineering to develop EcoSnap.
 
-## Installation
-
-To set up the EcoSnap application on your local machine, follow these steps:
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/MNTadros/EcoSnap.git
-   cd EcoSnap
-   ```
-
-2. **Install dependencies:**
-    ```bash
-    npm install
-    ```
-
-3. **Set Up Environment Variables:**
-Create a .env file in the root directory and add the following environment variables:
-    ```plaintext
-    OPENAI_API_KEY=your_openai_api_key
-    ```
-
-4. **Install dependencies:**
-Start the server using the following command:
-    ```bash
-    npm start
-    ```
-
 ## What's next for EcoSnap
 
 - **Recycling Center Information** (Future)
