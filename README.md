@@ -1,12 +1,17 @@
 # EcoSnap
 
+![EcoSnap Logo](./public/images/EcoSnap_Circle.png)
+
+## What's EcoSnap?
+
+EcoSnap was originally conceived as a first place winning hackathon project developed within a tight 48-hour timeframe. However, this version represents a complete rebuild that I have personally undertaken. Every line of code has been rewritten from scratch to ensure a robust and scalable foundation. Looking ahead, I plan to adapt EcoSnap into a fully functional phone application, bringing its features and benefits directly to users' fingertips for greater accessibility and impact.
 ## Purpose
 
-EcoSnap is a personal assistant application designed to empower users to make environmentally conscious decisions. By leveraging emerging technologies such as Ray-Ban Meta smart glasses, smart devices, and OpenAI’s APIs, our application analyzes and determines the best course of action for consumers to reduce their carbon footprint. This involves suggesting sustainable alternatives in what they eat, buy, and consume. EcoSnap integrates real-time insights and actionable recommendations into everyday activities to foster sustainable habits, reduce individual carbon footprints, and promote a broader culture of environmental awareness and responsibility.
+EcoSnap helps users make eco-friendly choices by analyzing their actions and suggesting sustainable alternatives. It leverages technologies like smart devices and OpenAI APIs to provide real-time insights, fostering habits that reduce carbon footprints and promote environmental awareness.
 
 ## Inspiration
 
-Our inspiration for this project stemmed from a desire to explore how we can lead more sustainable lifestyles without sacrificing convenience or time. Recognizing the importance of making environmentally conscious choices, we developed a tool that seamlessly integrates sustainability into daily decisions. By focusing on real-time insights and recommendations, we aim to simplify the process of choosing sustainable options that benefit both individuals and the environment. Utilizing emerging technologies, such as artificial intelligence and OpenAI's powerful language models, we analyze data to deliver personalized suggestions. Our goal is to empower users to embrace sustainability as a natural and convenient part of their everyday lives.
+EcoSnap was inspired by the need for convenient tools to support sustainable living. By integrating AI and real-time data, it simplifies eco-conscious decisions, empowering users to adopt sustainability in their daily lives.
 
 ## What it does
 
@@ -22,3 +27,8 @@ We used OpenAI API, Node.js, JavaScript, HTML, CSS, Machine Learning, Prompt Eng
 ## What's next for EcoSnap
 
 - **Recycling Center Information** (Future)
+- **Full Data Handling Re-Write** (Future)
+
+## Demo
+
+![EcoSnap Demo](./public/images/2025-04-08%2022-14-56.gif)
